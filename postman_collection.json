@@ -43,8 +43,8 @@
 							"script": {
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
-									"postman.setEnvironmentVariable(\"accessToken\", jsonData.accessToken);",
-									"postman.setEnvironmentVariable(\"refreshToken\", jsonData.refreshToken);"
+									"pm.collectionVariables.set(\"accessToken\", jsonData.accessToken);",
+									"pm.collectionVariables.set(\"refreshToken\", jsonData.refreshToken);"
 								],
 								"type": "text/javascript"
 							}
